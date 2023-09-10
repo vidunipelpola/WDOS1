@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Book - Hotel Jewel
+        </title>
+        <link rel="stylesheet" href="CSS/Main.css">
+        <!--For the favicon-->
+<link rel="apple-touch-icon" sizes="180x180" href="./Images/Favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./Images/Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./Images/Favicon/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="mask-icon" href="./Images/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="./Images/Favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="./Images/Favicon/browserconfig.xml">
+        <meta name="theme-color" content="#5e2b17">
+    </head>
+    <body>
+        <header><!--A transluscent banner, with the name of the hotel, and the navigation menu-->
+            <div class="banner"><!--A translucent banner at the top of the page that will include the logo, hotel name and navigation bar-->
+                <img class="logo" src="Images/logo.jpg" alt='logo'>
+                <span class="hotelname">
+                    Hotel Jewel
+                </span><br>  
+                <nav><!--This will include links to all the other pages-->
+                        <a href="index.html">Home</a> <span class="line">|</span><span class="newline"><br></span> 
+                        <a href="Branches.html">Branches</a><span class="line"> |</span><span class="newline"><br></span>  
+                        <a href="Adventures.html">Adventures</a> <span class="line">|</span><span class="newline"><br></span> 
+                        <span class="dropdown"> 
+                            <a href="Restaurants.html">Restaurants<span class="triangle">&#9662;</span></a><span class="newline"><br></span> 
+                            <div class="dropdowncontent">
+                                <a href="Weddings.html">Weddings</a><br>
+                                <a href="Parties.html">Parties</a>
+                            </div> <span class="line">|</span>
+                        </span> 
+                        <a href="Book.html"><i>Book</i></a><br>&nbsp;
+                    </nav>
+            </div>      
+        </header>
+        <main><!--Everything apart from the head, header and footer-->
+            <div class="container"><!--Will hold text and images together, horizontally-->
+                <div class="coverimg"><!--The cover image of the home page-->
+                    <img src="Images/Homepage/coverimage.jpeg" alt='coveriimage'>
+                    <div class="textoverimg">
+                        <form><!--The form to book a stay at the hotel-->
+                            <fieldset>
+                                <legend>
+                                    <h2>
+                                        Book your stay
+                                    </h2>
+                                </legend>
+                                First Name:
+                                    &nbsp;&nbsp;
+                                    <input type="text" name="firstname" maxlength="100">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Last Name:
+                                    <input type="text" name="lastname" maxlength="100">
+                                    <br>
+                                    <br>
+                                Contact No.:
+                                    &nbsp;
+                                    <input type="text" name="phonenum" maxlength="100">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Email:
+                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="text" name="email" maxlength="100" placeholder="example@gmail.com">
+                                    <br>
+                                    <br>
+                                Check In:
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="date" name="startdate">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                Check Out:
+                                    <input type="date" name="enddate">
+                                    &nbsp;&nbsp;&nbsp;
+                                Persons:
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="persons" min="1" max="50" placeholder="    -">
+                                    <br>
+                                    <br>
+                                Room Types:
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Single: <input type="checkbox" name="room">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Double: <input type="checkbox" name="room">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Triple: <input type="checkbox" name="room">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+                                Adventures:
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Surfing: <input type="checkbox" name="adventure">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Whale Watching: <input type="checkbox" name="adventure">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Turtle Interactions: <input type="checkbox" name="adventure">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                                Dining:
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select>
+                                        <option>
+                                            Yes
+                                        </option>
+                                        <option>
+                                            No
+                                        </option>
+                                    </select>
+                                    <br>
+                                    <br>
+                                Payment Method:
+                                    &nbsp;&nbsp;&nbsp;
+                                    Cash: 
+                                    <input type="radio" name="payment">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Card:
+                                    <input type="radio" name="payment">
+                                    &nbsp;&nbsp;&nbsp;
+                                        Card Details:&nbsp;
+                                        <input type="text" name="card" maxlength="10">         
+                            </fieldset>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="submit" Value="Book">
+                        </form>
+                    </div>
+                </div>
+            </div><br>
+        </main>
+        <footer><!--Includes the contact details and the copyright claim-->
+            <h2><!--Basic contact details-->
+                Contact Us:&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="contact">
+                    hoteljewel@gmail.com&nbsp;&nbsp;&nbsp;
+                    <span class="line">
+                        |
+                    </span>
+                    +94 77 241 3241&nbsp;&nbsp;&nbsp; 
+                    <span class="line">
+                        |
+                    </span>
+                </span>
+            </h2><br>
+            <p class="copyright">
+                <i>All rights reserved - Hotel Jewel - © 2023 | Designed by Viduni Pelpola</i>
+            </p>
+            <!--
+            References
+            Unsplash (2018). Photo by Xavier Coiffic on Unsplash. [online] unsplash.com. Available at: https://unsplash.com/photos/lQ4mfS5Le6M [Accessed 19 July 2023]
+            ‌-->
+        </footer>
+    </body>
+</html>
