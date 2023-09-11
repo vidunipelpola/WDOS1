@@ -118,7 +118,7 @@ h1{
     background-size: 100% 200%;
     animation: gradientSlide 4s linear infinite;
     border-radius: 0;
-    box-shadow: 0;
+    box-shadow: none;
 }
 
 h2{
